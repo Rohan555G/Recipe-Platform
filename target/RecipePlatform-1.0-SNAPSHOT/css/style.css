@@ -1,0 +1,134 @@
+/* Global layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    overflow-x: hidden;  /* ADD THIS LINE */
+}
+
+.container {
+    width: 400px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    word-wrap: break-word;         /* ADD THIS LINE */
+    overflow-wrap: break-word;     /* ADD THIS LINE */
+}
+
+/* Headings */
+h2, h3, h4 {
+    margin-top: 0;
+    color: #333333;
+}
+
+/* Forms */
+form {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin: 6px 0 3px;
+    font-size: 14px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Messages */
+.error {
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-bottom: 8px;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Fix for text wrapping - ADD THIS ENTIRE SECTION AT THE END */
+p, div, pre, span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+}
+/* Recipe content display */
+.recipe-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.6;
+    padding: 10px 0;
+}

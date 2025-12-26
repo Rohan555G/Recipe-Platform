@@ -1,0 +1,11 @@
+# Maven build output
+target/
+
+# IntelliJ / VS Code project files
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
