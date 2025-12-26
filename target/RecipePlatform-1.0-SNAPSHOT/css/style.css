@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f4f4;
-    overflow-x: hidden;  /* ADD THIS LINE */
+    overflow-x: hidden;
 }
 
 .container {
@@ -14,24 +14,25 @@ body {
     background: #ffffff;
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    word-wrap: break-word;         /* ADD THIS LINE */
-    overflow-wrap: break-word;     /* ADD THIS LINE */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Headings */
 h2, h3, h4 {
     margin-top: 0;
+    margin-bottom: 15px;  /* REDUCE THIS - was probably larger */
     color: #333333;
 }
 
 /* Forms */
 form {
-    margin: 15px 0;
+    margin: 10px 0;  /* REDUCE from 15px to 10px */
 }
 
 label {
     display: block;
-    margin: 6px 0 3px;
+    margin: 8px 0 3px;  /* REDUCE top margin from probably 15-20px to 8px */
     font-size: 14px;
     color: #333333;
 }
@@ -43,7 +44,7 @@ textarea,
 select {
     width: 100%;
     padding: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px;  /* Keep this small */
     border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 14px;
@@ -65,6 +66,7 @@ input[type="submit"] {
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 5px;  /* ADD THIS - small gap before button */
 }
 
 button:hover,
@@ -80,6 +82,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Paragraphs - ADD THIS */
+p {
+    margin: 10px 0;  /* Reduce paragraph spacing */
 }
 
 /* Tables */
@@ -116,19 +123,10 @@ img {
     margin: 8px 0;
 }
 
-/* Fix for text wrapping - ADD THIS ENTIRE SECTION AT THE END */
+/* Fix for text wrapping */
 p, div, pre, span {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: pre-wrap;
     max-width: 100%;
-}
-/* Recipe content display */
-.recipe-content {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    line-height: 1.6;
-    padding: 10px 0;
 }
