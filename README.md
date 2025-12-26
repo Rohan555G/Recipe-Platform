@@ -1,0 +1,2 @@
+This project is about creating a online platform where users can share and discover recipes, rate and comment on recipes, and administrators can manage the content and users. Each user type will have a dedicated dashboard for managing and accessing their functionalities. Description: The platform will enable users to share their recipes, search and discover new recipes, and interact with other users through ratings and comments. Administrators will oversee user activities, manage recipe content, and maintain system settings.
+
